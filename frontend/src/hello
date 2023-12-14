@@ -1,0 +1,1337 @@
+.home-container{
+  text-align: center;
+ 
+}
+
+.home-container img{
+  margin-top: 100px;
+max-width: 100%;
+  border-radius: 20px;
+  margin-left: 23%;
+}
+
+.home-container p{
+  font-size: 25px;
+  margin-left: 22%;
+  font-family: Mukta, sans-serif;
+  font-weight: 50;
+
+}
+.home-container button{
+  border: 0;
+  padding: 30px 80px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(17, 119, 253) ;
+  color: white;
+  margin-left: 25.5%;
+  font-family: Mukta, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.login-container .form-cont{
+  margin-top: 8%;
+  margin-left: 75%;
+  width: 65%;
+  box-shadow:  3px 3px 3px #ddd;
+}
+.login-container .form-cont form{
+  margin-left: 15px;
+}
+.login-container .image {
+  text-align: center;
+}
+.login-container img {
+  width: 20%;
+  height: 30%;
+  border-radius: 5px;
+}
+.login-container h2{
+  font-family: Mukta, sans-serif;
+  font-weight: 500;
+}
+.login-container .form-cont label{
+  font-family: Mukta, sans-serif;
+  font-weight: 500;
+}
+.login-container input[type="email"], input[type="password"]  {
+  width: 95%;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+.login-container .butt{
+  text-align: center;
+} 
+.login-container .butt button{
+  color: white;
+  background-color: rgb(17, 119, 253);
+  padding: 20px 70px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Mukta, sans-serif;
+  font-weight: 700;
+}
+.login-container p{
+  margin-left: -5px;
+  font-size: 20px;
+  color: rgb(49, 137, 253);
+  font-weight: 300;
+}
+.login-container span{
+  font-size: 20px;
+  color: rgb(58, 58, 255);
+  font-weight: 400;
+}
+.login-container a{
+  text-decoration: none;
+}
+
+.signup-container .image {
+  text-align: center;
+}
+.signup-container img {
+  width: 20%;
+  height: 30%;
+  border-radius: 5px;
+}
+.signup-container h2{
+  font-family: Mukta, sans-serif;
+  font-weight: 500;
+}
+.signup-container .form-cont{
+
+  margin-top: -3%;
+  margin-left: 75%;
+  width: 63%;
+  box-shadow:  2px 2px 3px #ddd;
+
+}
+
+.signup-container input[type="email"], input[type="text"], input[type="password"]  {
+  width: 95%;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: rgb(17, 119, 253);
+}
+
+.signup-container .butt{
+  text-align: center;
+} 
+.signup-container .butt button{
+  color: white;
+  background-color: rgb(17, 119, 253);
+  padding: 20px 70px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Mukta, sans-serif;
+  font-weight: 700;
+}
+.signup-container a{
+  text-decoration: none;
+  color: rgb(21, 4, 255);
+}
+.signup-container label{
+  font-size: 15px;
+  font-family: Mukta, sans-serif;
+  font-weight: 300;
+}
+.signup-container p{
+  font-size: 20px;
+  font-family: Mukta, sans-serif;
+  font-weight: 300;
+  color: rgb(4, 113, 255);
+  margin-left: -5px;
+}
+ 
+.navbar img{
+  margin-left: 10px;
+  width: 5%;
+
+}
+
+
+.view {
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 20%;
+ 
+}
+.view .text{
+  width: 57%;
+}
+.view-content{
+  margin-left: 40%;
+  margin-top: -25%;
+  border: 0.2px solid #ddd;
+  border-radius:5px;
+  width: 58%;
+}
+.view-content h1{
+  font-family: Mukta, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.view .more .font, .font{
+  font-family: Mukta, sans-serif;
+  font-weight: 500;
+}
+.view select{
+  width: 60%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.view-slight{
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.first .container{
+  margin-left: 25%;
+  margin-top: 10%;
+  width: 50%;
+  border: 1px solid rgb(76, 101, 243);
+  border-radius: 5px;
+  
+}
+.first .container h1{
+  margin-left: 30%;
+  font-family: Mukta, sans-serif;
+  font-weight: 400;
+  color: rgb(4, 113, 255);
+}
+.first .butt{
+  margin-left: 50px;
+}
+.first .big {
+  width: 60%;
+  height: 40px;
+  border: 1px solid rgb(4, 113, 255);
+  border-radius: 7px;
+  background: transparent;
+  cursor: pointer;
+  font-family: Mukta, sans-serif;
+  font-weight: 700;
+}
+.first button:hover{
+  background: lightblue;
+}
+.first .butt .little{
+  color: white;
+  background: rgb(4, 113, 255);
+  width: 8%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+
+}
+
+.permission{
+  width: 77%;
+  margin-left: 15%;
+  margin-top: -4%;
+  box-shadow: 0px 2px 2px 2px #ddd;
+
+}
+.permission-container .permission .flexing{
+  display: flex;
+   gap: 0;
+   margin-top: 10px;
+ }
+.permission-container .permission h1{
+  text-align: center;
+  margin-top: 70px;
+  font-family: Mukta, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+
+}
+.permission form{
+  margin-left: 20px;
+}
+.permission .names{
+  width: 92%;
+  height: 30px;
+  border-bottom: 2px dotted black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+}
+.permission .depart-date{
+  width: 45%;
+ 
+}
+.permission .depart-time{
+  width: 45%;
+ 
+ 
+}
+.permission .expect-date{
+  width: 45%;
+  
+ 
+}
+.permission .expect-time{
+  width: 45%;
+ 
+}
+.permission .issuer{
+  width: 45%;
+ 
+}
+.permission .button{
+  color: white;
+  background: rgb(4, 113, 255);
+  border-radius: 5px;
+  padding: 20px 100px 20px;
+  border: none;
+  margin-left: 38%;
+  font-family: Mukta, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+.permission .font{
+  font-family: Mukta, sans-serif;
+  font-weight: 500;
+}
+.permission select{
+  padding: 10px 0px 10px;
+  border: 1px solid #ddd;
+}
+.permission .depart-reason{
+  width: 45%;
+}
+.permission input[type="date"], input[type="time"]{
+  width: 95%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 28px;
+  outline: none;
+}
+.fault{
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 5px;
+  border: 2px solid rgb(90, 79, 253);
+  margin-top: 10px;
+}
+.fault h1{
+  font-family: Mukta, sans-serif;
+  font-weight: 700;
+  font-size: 1.875;
+  line-height: 2.25rem;
+  text-align: center;
+}
+.fault form{
+  margin-left: 30px;
+}
+.fault .names{
+  width: 94.5%;
+  height: 30px;
+  border-bottom: 2px dotted black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.fault .font{
+  font-family: Mukta, sans-serif;
+  font-weight: 500;
+}
+.fault .select1{
+  width: 50%;
+}
+.fault .flexing{
+  display: flex;
+  margin-top: 10px;
+}
+.fault .select1 select{
+   width: 80%;
+   height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.fault .select2 {
+width: 50%;
+}
+.fault .select2 select{
+  width: 80%;
+  height: 40px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+}
+.fault .select3 select{
+  padding: 15px 30px 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.fault input[type="date"]{
+  width: 95%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  outline: none;
+}
+.fault button{
+  color: white;
+  background: rgb(4, 113, 255);
+  border-radius: 5px;
+  padding: 20px 100px 20px;
+  border: none;
+  margin-left: 38%;
+  font-family: Mukta, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+.fault textarea{
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.footer{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 1.5rem;
+    background: white;
+    box-shadow: 0px 0px 10px 0px #ddd;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   column-gap: 20px;
+}
+.footer h2, p{
+
+  font-family: Mukta, sans-serif;
+  font-weight: 500;
+  color: rgb(86, 92, 100) ;
+}
+.footer h2{
+  margin-left: 1.7rem;
+}
+.footer p{
+  line-height: 2.2rem;
+}
+.footer a{
+  text-decoration: none;
+  margin-left: 10px;
+}
+.footer .links{
+margin-left: 1.3rem;
+}
+.footer .icon{
+  padding: 10px 10px;
+  font-size: 25px;
+  color: rgb(25, 38, 54);
+}
+.footer .blue:hover{
+  scale: 2;
+  color: rgb(4, 113, 255);
+}
+.footer .red:hover{
+  color: red;
+}
+.footer .purple:hover{
+  color: rgb(182, 9, 182);
+}
+@media (min-width: 600px) and (max-width: 850px) and (orientation: portrait) {
+  /* Your styles for iPad Mini in portrait orientation */
+  .login-container .form-cont{
+    margin-top: 15%;
+    margin-left: 15%;
+  }
+  .signup-container .form-cont{
+    margin-top: 15%;
+    margin-left: 13%;
+  }
+  .fault-container .fault .select2{
+    margin-top: -14%;
+  }
+  .fault-container .fault .select3{
+    margin-top: 0px;
+  }
+  .fault-container .fault .select3 select{
+    width: 30%;
+    height: 35px;
+    margin-left: 5px;
+    border: 1px solid #ddd;
+  }
+  .login-container{
+    margin-left: 10px;
+  }
+  .signup-container{
+    margin-left: 10%;
+  }
+  .navbar img{
+    width: 5%;
+   }
+   .navbar .nav-links{
+    margin-top: -20.5%;
+   }
+   .navbar header{
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+  padding: 30px 10px;
+     }
+     
+     .navbar .nav-links {
+       list-style: none;
+       margin-top: -21%;
+     }
+     
+     
+     .navbar .nav-links li{
+       display: inline-block;
+       padding: 0px 20px;
+       margin-top: 35px;
+     }
+     .navbar .nav-links li a{
+       text-decoration: none;
+       transition: all 0.3s ease 0s;
+       color: rgb(4, 113, 255);
+       font-family: Mukta, sans-serif;
+       font-weight: 500;
+     
+     }
+     .navbar .nav-links li a:hover {
+       color: rgb(194, 141, 247);
+     }
+     .navbar ul{
+       margin-top: -32%;
+     }
+     
+      .navbar{
+       box-shadow: 2px 2px 3px #ddd;
+       height: 55px;
+      }
+      .navbar .button{
+       margin-top: -10%;
+      }
+      .navbar .nav-links .log{
+       border: none;
+       border-radius: 5px;
+       padding: 9px 25px;
+       transition: all 0.3s ease 0s;
+       background: rgb(4, 113, 255);
+       color: white;
+       font-family: Mukta, sans-serif;
+       font-weight: 500;
+       cursor: pointer;
+      }
+      .navbar .nav-btn{
+       padding: 5px;
+       cursor: pointer;
+       background: transparent;
+       border: none;
+       outline: none;
+       color: black;
+       visibility: hidden;
+       opacity: 0;
+       font-size: 2.5rem;
+      }
+     .navbar .app{
+       font-family: Mukta, sans-serif;
+       font-weight: 500;
+       text-decoration: none;
+       transition: all 0.3s ease 0s;
+       color: rgb(4, 113, 255);
+       cursor: pointer;
+     }
+     .navbar .modal-container .modal-content .approve{
+       margin: 20px auto 20px 20px;
+       border-bottom: 1px solid #fafafa;
+      
+     }
+     .navbar .modal-container .modal-content  h2 , p{
+       margin-left: 30px;
+       margin-top: 15px;
+       font-family: Mukta, sans-serif;
+       font-weight: 500;
+     }
+     
+     .navbar .modal-container .modal-content  .approvebtn{
+       padding: 10px 20px 10px;
+       color: white;
+       background: rgb(4, 113, 255);
+       border: none;
+       margin-left: 3%;
+       border-radius: 5px;
+       cursor: pointer;
+     }
+     .permission-container .permission #qrcode{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: none;
+     }
+     .permission-container .permission #qrcode .qrcode-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-top: 15%;
+      margin-left: 25%;
+      width: 40%;
+    }
+    
+    .permission-container .permission #qrcode .qrcode-container .real{
+      margin-left: 11%;
+      margin-bottom: 5%;
+    }
+    .permission-container .permission #qrcode .qrcode-container .real .button{
+      margin-left: 1.5%;
+      margin-top: 5%;
+      padding: 15px 80px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: rgb(4, 113, 255);
+      cursor: pointer;
+    }
+    .permission-container .permission #qrcode .qrcode-container .real h1{
+      font-family: Mukta, sans-serif;
+      font-weight: 700;
+    }
+    .permission-container .permission #qrcode .btn {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 20px;
+      margin-left: 50px;
+      width: 50px;
+      border: none;
+      border-radius: 20%;
+      color: #ddd;
+      background: black;
+      cursor: pointer;
+    }
+    .footer{
+      padding: 2px;
+      column-gap: 2px;
+      width: 99%;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1280px) {
+ /*Rules for tablets*/
+  .home-container {
+    width: 90%;
+  }
+  .login-container {
+    width: 60%;
+    margin-left:  -12%;
+    margin-top: 15%;
+  }
+  .signup-container {
+    width: 60%;
+    margin-left: -12%;
+    margin-top: 15%;
+  }
+  
+  .navbar img{
+   width: 5%;
+  }
+  .navbar .nav-links{
+   margin-top: -20.9%;
+  }
+  .navbar header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10px;
+    }
+    
+    .navbar .nav-links {
+      list-style: none;
+      margin-top: -21%;
+    }
+    
+    
+    .navbar .nav-links li{
+      display: inline-block;
+      padding: 0px 20px;
+      margin-top: 35px;
+    }
+    .navbar .nav-links li a{
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+      color: rgb(4, 113, 255);
+      font-family: Mukta, sans-serif;
+      font-weight: 500;
+    
+    }
+    .navbar .nav-links li a:hover {
+      color: rgb(194, 141, 247);
+    }
+    .navbar ul{
+      margin-top: -32%;
+    }
+    
+     .navbar{
+      box-shadow: 2px 2px 3px #ddd;
+      height: 55px;
+     }
+     .navbar .button{
+      margin-top: -10%;
+     }
+     .navbar .nav-links .log{
+      border: none;
+      border-radius: 5px;
+      padding: 9px 25px;
+      transition: all 0.3s ease 0s;
+      background: rgb(4, 113, 255);
+      color: white;
+      font-family: Mukta, sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+     }
+     .navbar .nav-btn{
+      padding: 5px;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      font-size: 2.5rem;
+     }
+    .navbar .app{
+      font-family: Mukta, sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+      color: rgb(4, 113, 255);
+      cursor: pointer;
+    }
+    .navbar .modal-container .modal-content .approve{
+      margin: 20px auto 20px 20px;
+      border-bottom: 1px solid #fafafa;
+     
+    }
+    .navbar .modal-container .modal-content  h2 , p{
+      margin-left: 30px;
+      margin-top: 15px;
+      font-family: Mukta, sans-serif;
+      font-weight: 500;
+    }
+    
+    .navbar .modal-container .modal-content  .approvebtn{
+      padding: 10px 20px 10px;
+      color: white;
+      background: rgb(4, 113, 255);
+      border: none;
+      margin-left: 3%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+  .permission{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .permission-container .permission #qrcode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  
+  .permission-container .permission #qrcode .qrcode-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 15%;
+    margin-left: 25%;
+    width: 40%;
+  }
+  
+  .permission-container .permission #qrcode .qrcode-container .real{
+    margin-left: 30%;
+    margin-bottom: 5%;
+  }
+  .permission-container .permission #qrcode .qrcode-container .real .button{
+    margin-left: 1.5%;
+    margin-top: 5%;
+    padding: 15px 80px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgb(4, 113, 255);
+    cursor: pointer;
+  }
+  .permission-container .permission #qrcode .qrcode-container .real h1{
+    font-family: Mukta, sans-serif;
+    font-weight: 500;
+  }
+  .permission-container .permission #qrcode .btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 20%;
+    color: #ddd;
+    background: black;
+    cursor: pointer;
+  }
+  .fault-container .fault .select3 select{
+    width: 30%;
+    height: 35px;
+    margin-left: 5px;
+    border: 1px solid #ddd;
+  }
+ 
+  }
+ 
+
+@media (max-width: 600px) {
+  /* Rules for mobile screens */
+  .home-container {
+    width: 100%;
+    margin-left: -15px;
+    margin-top: 0px;
+  }
+  .home-container img{
+    width: 80%;
+    height: 35%;
+    margin-left: 8%;
+  }
+  .home-container p{
+     font-size: 1.5rem;
+     line-height: 2rem;
+  }
+  .home-container button{
+    margin-left: 11%;
+  }
+  .login-container .form-cont{
+    width: 97%;
+    margin-left: 10px;
+    margin-top: 100px;
+  }
+ 
+  .signup-container .form-cont{
+    width: 97%;
+    margin-left: 10px;
+  }
+  .navbar{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: 2px 2px 3px 2px #ddd;
+  }
+  .navbar img{
+    width: 15%;
+    margin-top: 5PX;
+    margin-left: 0px;
+    height: 35px;
+    position: fixed;
+  }
+  .navbar .nav-links .log{
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    font-family: Mukta, sans-serif;
+    font-weight: 500;
+  }
+  
+  .navbar .nav-links .app{
+    font-size: 2rem;
+    color: white;
+    font-family: Mukta, sans-serif;
+    font-weight: 500;
+  }
+ 
+  .navbar .bars{
+    margin-top: 2%;
+    margin-left: 87%;
+    cursor: pointer;
+    border: none;
+    color: black;
+    background: transparent;
+    font-size: 30px;
+  }
+  .navbar .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+  .navbar nav{
+    position: fixed;
+    top: 0;
+    left: 10%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: rgb(46, 117, 224);
+    transition: 0.5s;
+    transform: translatey(-100vh);
+  }
+  .navbar .nav-links{
+    margin-top: -10%;
+  }
+  .navbar ul{
+    list-style: none;
+  }
+  .navbar .responsive_nav{
+    transform: none ;
+  }
+.navbar .nav-close-btn{
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.navbar .nav-links li a{
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-family: Mukta, sans-serif;
+  font-weight: 500;
+}
+.view{
+  width: 60%;
+}
+.view-content{
+  margin-left: 2%;
+  margin-top: 10px;
+  width: 94%;
+}
+
+  .first .container{
+    margin-left: 10px;
+    width: 93%;
+    margin-top: 200px;
+  }
+  .fist .container button{
+    width: 88%;
+    margin-left: 5px;
+  }
+  .permission-container{
+    margin: 0px;
+  }
+  body{
+    margin: 0px;
+  }
+  
+  .permission {
+    width: 96%;
+    margin: 0px;
+  }
+  .permission form{
+    margin-top: 6.2rem;
+    margin-left: 10px;
+  }
+  .permission-container h1{
+   margin-top: 50px;
+
+  }
+  .permission .depart-date{
+    
+    width: 45%;
+  }
+  .permission .depart-time{
+ 
+    width: 45%;
+  }
+  .permission .expect-date{
+     
+    width: 45%;
+  }
+  .permission .expect-time{
+   
+    width: 45%;
+   
+  }
+  .permission input[type="date"], input[type="time"]{
+    margin-left: 10px;
+    outline: none;
+  }
+  .permission select{
+    margin-left: 10px;
+  }
+ 
+  .permission .button{
+    margin-left: 40%;
+    padding: 15px 30px 15px;
+  }
+  .permission-container .permission #qrcode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  
+  .permission-container .permission #qrcode .qrcode-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 12%;
+    margin-left: 2%;
+    width: 84%;
+  }
+  
+  .permission-container .permission #qrcode .qrcode-container .real{
+    margin-left: 18%;
+    margin-bottom: 5%;
+  }
+  .permission-container .permission #qrcode .qrcode-container .real .button{
+    margin-left: 1.5%;
+    margin-top: 5%;
+    padding: 15px 80px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgb(4, 113, 255);
+    cursor: pointer;
+  }
+  .permission-container .permission #qrcode .qrcode-container .real h1{
+    font-family: Mukta, sans-serif;
+    font-weight: 500;
+  }
+  .permission-container .permission #qrcode .btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 20%;
+    color: #ddd;
+    background: black;
+    cursor: pointer;
+  }
+  .fault {
+    width: 92%;
+   margin-left: 7px;
+   margin-top: 10px;
+   margin-right: 0px;
+  }
+  .fault form{
+    margin-left: 5px;
+  }
+  .fault textarea{
+    width: 70%;
+  }
+  .fault button{
+    margin-left: 40%;
+  padding: 15px 30px 15px;
+  }
+  .fault input[type="time"]{
+    width: 92%;
+    outline: none;
+  }
+  
+  .fault .select3 select{
+    margin-left: 5px;
+    width: 40%;
+    height: 35px;
+    border: 1px solid #ddd;
+  }
+  .modal-container .modal-content {
+    width: 80%;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  .footer{
+   display: block;
+   flex-direction: row;
+  }
+  
+}
+
+
+@media (min-width: 1280px) {
+  /* Rules for desktop screens */
+ 
+  .home-container {
+    width: 80%;
+  }
+  .login-container {
+    width: 50%;
+  }
+ 
+  .signup-container {
+    width: 50%;
+  }
+ .navbar .navbarr{
+  display: flex;
+  justify-content: space-between;
+ }
+ .navbar .navbarr header{
+  padding: 0;
+  height: 80px;
+ }
+  .navbar header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10px;
+    }
+    .navbar img{
+   width: 19%;
+    }
+    .navbar .nav-links {
+      list-style: none;
+     margin-top: 5px;
+    }
+    
+    
+    .navbar .nav-links li{
+      display: inline-block;
+      padding: 0px 20px;
+      margin-top: 35px;
+    }
+    .navbar .nav-links li a{
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+      color: rgb(4, 113, 255);
+      font-family: Mukta, sans-serif;
+      font-weight: 500;
+    
+    }
+    .navbar .nav-links li a:hover {
+      color: rgb(194, 141, 247);
+    }
+   .navbar{
+      box-shadow: 2px 2px 3px #ddd;
+      height: 55px;
+     }
+     .navbar .button{
+      margin-top: -10%;
+     }
+     .navbar .nav-links .log{
+      border: none;
+      border-radius: 5px;
+      padding: 9px 25px;
+      transition: all 0.3s ease 0s;
+      background: rgb(4, 113, 255);
+      color: white;
+      font-family: Mukta, sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+     }
+     .navbar .nav-btn{
+      padding: 5px;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      font-size: 2.5rem;
+     }
+    .navbar .app{
+      font-family: Mukta, sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s ease 0s;
+      color: rgb(4, 113, 255);
+      cursor: pointer;
+    }
+    .navbar .modal-container .modal-content .approve{
+      margin: 20px auto 20px 20px;
+      border-bottom: 1px solid #fafafa;
+     
+    }
+    .navbar .modal-container .modal-content  h2 , p{
+      margin-left: 30px;
+      margin-top: 15px;
+      font-family: Mukta, sans-serif;
+      font-weight: 500;
+    }
+    
+    .navbar .modal-container .modal-content  .approvebtn{
+      padding: 10px 20px 10px;
+      color: white;
+      background: rgb(4, 113, 255);
+      border: none;
+      margin-left: 3%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .permission-container .permission .flexing{
+     display: flex;
+      gap: 0;
+    }
+    .permission-container .permission .depart-date{
+     
+    }
+    .permission-container .permission .depart-time{
+    margin-left: 5%;
+    }
+    .permission-container .permission .expect-time{
+      margin-left: 5%;
+      margin-top: 0;
+    }
+    .permission-container .permission .depart-reason{
+    margin-left: 5%;
+    }
+  .permission-container .permission #qrcode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  
+  .permission-container .permission #qrcode .qrcode-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+    margin-left: 28%;
+    width: 40%;
+  }
+  
+  .permission-container .permission #qrcode .qrcode-container .real{
+    margin-left: 30%;
+    margin-bottom: 5%;
+    
+  }
+  .permission-container .permission #qrcode .qrcode-container .real .button{
+    margin-left: 1.5%;
+    margin-top: 5%;
+    padding: 15px 80px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgb(4, 113, 255);
+    cursor: pointer;
+  }
+  .permission-container .permission #qrcode .qrcode-container .real h1{
+    font-family: Mukta, sans-serif;
+    font-weight: 300;
+  }
+  .permission-container .permission #qrcode .btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 20%;
+    color: #ddd;
+    background: black;
+    cursor: pointer;
+  }
+}
+
+@media print {
+  /* Rules for printed documents */
+  .home-container {
+    width: 100%;
+    margin: 0;
+  }
+  .login-container {
+    width: 100%;
+    margin: 0;
+  }
+  .signup-container {
+    width: 100%;
+    margin: 0;
+  }
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 5%;
+  margin-left: 4%;
+  width: 90%;
+}
+.modal-content .modalbtn{
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+  border: none;
+  border-radius: 20%;
+  color: #ddd;
+  background: black;
+  cursor: pointer;
+}
+.modal-container .modal-content  .font-boxes{
+  font-family: Mukta, sans-serif;
+  font-weight: 500;
+  margin-left: 2.9%;
+}
+.modal-container .modal-content .boxes{
+  width: 50%;
+  height: 35px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.modal-container .modal-content .morediv .accordion{
+  width: 80%;
+}
+.modal-container .modal-content .morediv .accordion .full-cont{
+  margin-left: 5%;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+.modal-container .modal-content .morediv .accordion .full-cont.show{
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(0,1,0,1); 
+}
+.modal-container .modal-content .morediv .accordion .little-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.modal-content input[type="text"]{
+  width: 80%;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  outline: none;
+}
