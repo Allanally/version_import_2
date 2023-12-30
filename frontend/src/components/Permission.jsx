@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import axios from "axios";
 import QRCode from "qrcode";
 import Modal from "./Modal";
-
+import logo from './logo.0cfaa4df.png'
 
 
 
@@ -23,6 +23,7 @@ const Permission = () => {
   const [returnTime, setReturnTime] = useState('');
   const [reason, setReason] = useState('');
   const [issuer, setIssuer] = useState('');
+  const [parentsContact, setParentsContact] = useState('');
   const [stream, setStream] = useState('');
   const [qrcodeData, setQRCodeData] = useState(null); 
   const [userData, setUserData] = useState(null);
@@ -32,6 +33,7 @@ const Permission = () => {
     if (storedData) {
       const parsedData = JSON.parse(storedData);
       setUserData(parsedData);
+      setIssuer(parsedData.name);
    
     if (parsedData && parsedData.name) {
       setIssuer(parsedData.name);
@@ -49,6 +51,7 @@ const Permission = () => {
   Return Date: ${returnDate}
   Return Time: ${returnTime}
   Issuer: ${issuer}
+  Parents Contact: ${parentsContact}
   Reason: ${reason}
   Class: ${stream}`;
   
@@ -56,7 +59,7 @@ const Permission = () => {
   setShowQRCode(true);
 
   axios.post('http://localhost:1338/pendings', {
-    name, departDate,departTime, issuer, reason, stream
+    name, departDate,departTime, issuer, reason,parentsContact,  stream
   })
   .then(result => {
     console.log(result);
@@ -73,38 +76,54 @@ const Permission = () => {
   }
 
    
+ 
   const handleClick = () => {
     const now = new Date();
     const currentDate = now.toLocaleDateString(); // Date in a readable format
     const currentTime = now.toLocaleTimeString();
+  
+    const data = `${currentDate}   ${currentTime}`;
+  
+    const pdf = new jsPDF('p', 'mm', 'a4');
 
-    const heading = "QrCode For Permission";
-    const data = `
-                 ${currentDate}   ${currentTime}`;
-    
+    const img = new Image();
+    img.src = logo;
   
-    const pdf = new jsPDF("p", "mm", "a4");
-    pdf.setFontSize(20);
-    pdf.text(heading, 105, 20, null, null, "center");
-    pdf.setFontSize(15);
-    pdf.text(data, 45, 30);
+    img.onload = function () {
+      pdf.addImage(img, 'PNG', 10, 10, 20, 20);
   
-    // Generate QR code as a PNG image
-    QRCode.toDataURL(qrcodeData, { errorCorrectionLevel: "H" }, function (err, url) {
-      if (err) {
-        console.error(err);
-        return;
-      }
+      pdf.setFontSize(30);
+      pdf.text("COLLEGE ST ANDRE", 40, 25); 
   
-      // Add the QR code image to the PDF
-      pdf.addImage(url, "PNG", 65, 40, 80, 72);
+      pdf.setLineWidth(0.5);
+      pdf.line(10, 32, 180, 32);
+      pdf.setFontSize(16);
+      pdf.text('Permission Qr Code', 80, 40);
   
-      pdf.save(`${name}_permission_form`);
-      navigate('/first');
-    });
+      pdf.setFontSize(15);
+      pdf.text(data, 70, 50); 
+
+      QRCode.toDataURL(qrcodeData, { errorCorrectionLevel: 'H' }, function (err, url) {
+        if (err) {
+          console.error(err);
+          return;
+        }
+  
+        pdf.addImage(url, "PNG", 65, 55, 80, 72); 
+  
+        pdf.setLineWidth(0.5);
+        pdf.line(10, 140, 200, 140); 
+  
+        pdf.setFontSize(8);
+        pdf.text("Powered By Smart-Sign: https://smartsign.com", 60, 145); 
+  
+        pdf.save(`${name}_permission_form`);
+        navigate('/first');
+      });
+    };
   };
   
-
+  
   return (
     <div>
       <Navbar />
@@ -151,13 +170,13 @@ onChange={(e) => setReturnTime(e.target.value)} /><br />
 <div className="flex flex-col w-6/12">
 <label className="">Reason</label>
    <input type="text" className='border-b w-10/12 outline-blue-400 h-12' value={reason} onChange={(e) =>setReason(e.target.value)}  />
-</div><br />
 </div>
-
-<div className="" style={{marginBottom: "10px", marginTop: "10px"}}>
+</div>
+<div className="flex gap-5">
+<div className="w-6/12" style={{marginBottom: "10px", marginTop: "10px"}}>
 <label className="font">Class</label>
     <br /><br />
-    <select className="h-14 text-md w-5/12 bg-white outline-blue-400 rounded-md border" value={stream} onChange={(e) => setStream(e.target.value)}>
+    <select className="h-14 text-md  w-11/12 bg-white outline-blue-400 rounded-md border" value={stream} onChange={(e) => setStream(e.target.value)}>
             <option value="S1 A">S1 A</option>
             <option value="S1 B">S1 B</option>
             <option value="S1 C">S1 C</option>
@@ -187,6 +206,12 @@ onChange={(e) => setReturnTime(e.target.value)} /><br />
             <option value="S6 PCM">S6 PCM</option>
             </select>
 </div>
+<div className="flex flex-col w-6/12 mt-4">
+<label className="">Parents Contact</label>
+   <input type="contact" className='border-b w-10/12 outline-blue-400 h-12' value={parentsContact} onChange={(e) =>setParentsContact(e.target.value)}  />
+</div>
+</div>
+
 <button onClick={() => setOpen(true)} type="submit" className="mt-8 bg-blue-500 font-bold rounded-md text-white w-4/12 m-auto h-12">SIGN</button><br /><br/>
          
         </form>
@@ -214,14 +239,38 @@ onChange={(e) => setReturnTime(e.target.value)} /><br />
 
 export default Permission;
 
-{
-  /*
-    {qrcodeData && (
-            <QRCode
-              value={qrcodeData}
-              size={200}
-              level="H" style={{ padding: "20px", border: "1px solid rgb(4, 113, 255)", borderRadius: "5px"}} />
-          )}
-  */
-}
+{/* 
+   const handleClick = () => {
+    const now = new Date();
+    const currentDate = now.toLocaleDateString(); // Date in a readable format
+    const currentTime = now.toLocaleTimeString();
+
+    const heading = "QrCode For Permission";
+    const data = `
+                 ${currentDate}   ${currentTime}
+                 `;
+    
+  
+    const pdf = new jsPDF("p", "mm", "a4");
+    pdf.setFontSize(20);
+    pdf.text(heading, 105, 20, null, null, "center");
+    pdf.setFontSize(15);
+    pdf.text(data, 45, 30);
+  
+    // Generate QR code as a PNG image
+    QRCode.toDataURL(qrcodeData, { errorCorrectionLevel: "H" }, function (err, url) {
+      if (err) {
+        console.error(err);
+        return;
+      }
+  
+      // Add the QR code image to the PDF
+      pdf.addImage(url, "PNG", 65, 40, 80, 72);
+  
+      pdf.save(`${name}_permission_form`);
+      navigate('/first');
+    });
+  };
+  
+*/}
 

@@ -9,6 +9,7 @@ const UserModel = require('./models/User')
 const cookieParser = require('cookie-parser');
 const authRoutes = require("./Routes/AuthRoutes");
 const RequestModel = require('./models/Requests');
+const bcrypt = require('bcrypt'); 
 require('dotenv').config();
 
 
@@ -44,7 +45,43 @@ app.post('/fault', (req, res) => {
 app.post("/", (req,res) => {
   
 })
+app.post('/forgotpwd', (req, res) => {
+    UserModel.findOne(req.body)
+    .then(result => {res.json(result)
+      console.log(result) })
+   
+    .catch(err => {
+      console.error('Error Fetching User', err);
+      res.status(500).json("Server error");
+    });
+})
 
+
+app.post('/changepwd', async (req, res) => {
+  try {
+    const { email, pwd } = req.body;
+    if (!email || !pwd) {
+      return res.status(400).json({ message: 'Email and password are required.' });
+    }
+    const hashedPassword = await bcrypt.hash(pwd, 10); 
+    const result = await UserModel.findOneAndUpdate(
+      { email },
+      { $set: { password: hashedPassword } },
+      { new: true } 
+    );
+
+    if (result) {
+      console.log('Password updated successfully:', result);
+      return res.json({ message: 'Password updated successfully.' });
+    } else {
+      console.log('User not found.');
+      return res.status(404).json({ message: 'User not found.' });
+    }
+  } catch (error) {
+    console.error('Error updating password:', error);
+    return res.status(500).json({ message: 'Internal server error.' });
+  }
+});
 
 app.get('/permissions', (req, res) => {
   PermissionModel.find({})
@@ -63,16 +100,7 @@ app.post('/request', (req, res) => {
     res.status(500).json("Server error");
   });
 })
-app.post('/session', (req, res) => {
-  UserModel.findOne(req.body)
-  .then(result => {res.json(result)
-    console.log(result) })
- 
-  .catch(err => {
-    console.error('Error Fetching User', err);
-    res.status(500).json("Server error");
-  });
-})
+
 app.post('/permission', (req, res) => {
   PermissionModel.create(req.body)
     .then(permission => {res.json(permission)

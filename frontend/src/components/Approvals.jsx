@@ -4,6 +4,7 @@ import { FaTrash } from 'react-icons/fa';
 import axios from 'axios';
 import swal from 'sweetalert';
 import jsPDF from "jspdf";
+import logo from './logo.0cfaa4df.png'
 
 const Approvals = () => {
     const [returningDate, setReturningDate] = useState(false);
@@ -30,10 +31,10 @@ const Approvals = () => {
 
 
 
-        const { name, stream,departDate, departTime, issuer, reason } = permission;
+        const { name, stream,departDate, departTime, issuer, parentsContact, reason } = permission;
           e.preventDefault()
           axios.post('http://localhost:1338/permission', {
-            name, stream, departDate, departTime, returningDate, returningTime, reason,
+            name, stream, departDate, departTime, returningDate, returningTime, parentsContact, issuer, reason,
           })
           .then((result) => {
             console.log("Approval data sent successfully:", result);
@@ -49,21 +50,38 @@ const Approvals = () => {
             console.error("Error sending approval data:", error);
             swal("Failed to approve", error)
           });
-          const heading = "Justification Form";
-      const data = `Student Names: ${name}
+      const data = `
+      Student Names: ${name}
       Justified From: ${departDate}
       At: ${departTime}
       To: ${returningDate}
       At: ${returningTime}
       Signed By :  `;
+
       const pdf = new jsPDF("p", "mm", "a4");
-      pdf.setFontSize(20);
-      pdf.text(heading, 105, 20, null, null, "center");
-      pdf.setFontSize(15);
-      pdf.text(data, 45, 30); 
+
+      const img = new Image();
+      img.src = logo;
+      img.onload = function() {
+      pdf.addImage(img, 'PNG', 10, 10, 20, 20);
+  
+      pdf.setFontSize(30);
+      pdf.text("COLLEGE ST ANDRE", 40, 25); 
+  
+      pdf.setLineWidth(0.5);
+      pdf.line(10, 32, 180, 32);
+      pdf.setFontSize(18);
+      pdf.text('Justification Form', 80, 40);
+      pdf.setFontSize(13);
+      pdf.text(data, 45, 50); 
+      pdf.setLineWidth(0.5);
+      pdf.line(10, 100, 200, 100); 
+
+      pdf.setFontSize(8);
+      pdf.text("Powered By Smart-Sign: https://smartsign.com", 60, 110); 
     
       pdf.save(`${name}_justification_form.pdf`);
-
+    }
       axios.delete('http://localhost:1338/pendings', {
         name, departDate, departTime, issuer, returningDate, returningTime, reason, stream
        })

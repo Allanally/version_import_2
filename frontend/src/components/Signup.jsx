@@ -48,7 +48,7 @@ const Signup = () => {
         
     return (  
       <div>
-        <div className="text-sm  shadow-lg p-1 rounded-md sm:w-4/12 w-full md:mt-10 mt-0 md:h-[90vh] h-[99vh] m-auto flex flex-col">
+        <div className="text-sm  shadow-lg p-1 rounded-md sm:w-4/12 w-full md:mt-10 mt-0  m-auto flex flex-col">
             <div>
                  <div>
                   <div className='flex flex-col items-center'>

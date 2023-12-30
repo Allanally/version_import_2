@@ -53,8 +53,8 @@ const Login = () => {
     
       <div>
       
-        <div className="text-sm shadow-lg p-1 rounded-md sm:w-4/12 w-full mt-32 h-[70vh] m-auto  items-center flex flex-col">
-        <img src={logo} alt="" className="w-20 h-20 mt-4" />
+        <div className="text-sm shadow-lg p-1 rounded-md sm:w-4/12 w-full mt-16 m-auto  items-center flex flex-col">
+        <img src={logo} alt="smrt-sign" className="w-20 h-20 mt-4" />
         <h1 className="text-3xl font-bold mt-6">Login</h1>
           <form onSubmit={handleSubmit} className="mt-8 sm:w-10/12 w-full flex flex-col">
           <div className='flex w-full text-md flex-col'>
@@ -66,7 +66,8 @@ const Login = () => {
             <div className='flex w-full text-md flex-col'>
             <label className='text-xl'>Password</label>
 
-              <input type="password" className='border-b indent-4 m-2 focus:outline-blue-400 h-[5vh]' placeholder='    Your Password.... ' required  value={password} onChange={(e) => setPassword(e.target.value)}/>       
+              <input type="password" className='border-b indent-4 m-2 focus:outline-blue-400 h-[5vh]' placeholder='    Your Password.... ' required  value={password} onChange={(e) => setPassword(e.target.value)}/>   
+              <p className='text-blue-500 text-xl text-left hover:text-blue-900 cursor-pointer ml-6'><Link to="/forgotpwd">Forgot Password</Link></p>    
             </div>
           
             <div>
@@ -76,9 +77,9 @@ const Login = () => {
               </div>
                 
             
-              <Link to="/signup">
-                <p className='text-blue-500 text-center text-xl hover:text-blue-900'>OR <span>Create An Account</span></p>
-              </Link>
+              
+                <p className='text-blue-500 text-center text-xl'><Link to="/signup"><span className='hover:text-blue-900'>Create An Account</span></Link></p>
+              
             </div>
             <br />
           </form>

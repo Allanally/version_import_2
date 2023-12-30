@@ -9,6 +9,7 @@ import Fault from "./components/Fault";
 import "react-toastify/dist/ReactToastify.css"
 import ViewDocs from "./components/View";
 import Approvals from "./components/Approvals";
+import ForgotPwd from "./components/ForgotPwd";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
 <Routes>
     <Route path="*" element={<Home />} />
     <Route path="/login" element={<Login />} />
+    <Route path="/forgotpwd" element={<ForgotPwd />} />
     <Route path="/signup" element={<Signup />} />
     <Route path="/first" element={<First />} />
     <Route path="/permission" element={<Permission />} />

@@ -7,6 +7,7 @@ const PendingSchema = new mongoose.Schema({
     departTime: String,
     issuer: String,
     reason: String,
+    parentsContact: String,
     stream: String
 })
 PendingSchema.statics.query = async function(){
