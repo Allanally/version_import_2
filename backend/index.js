@@ -9,10 +9,10 @@ const UserModel = require('./models/User')
 const cookieParser = require('cookie-parser');
 const authRoutes = require("./Routes/AuthRoutes");
 const RequestModel = require('./models/Requests');
+const StudentModel = require('./models/Student');
+const FaultingModel = require('./models/Faulting')
 const bcrypt = require('bcrypt'); 
 require('dotenv').config();
-
-
 
 
 app.use(express.json());
@@ -32,7 +32,28 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch((err) => {
     console.error('Error connecting to MongoDB:', err);
   });
+
+  app.post('/students', async (req, res) => {
+    try {
+      const streamPattern = new RegExp(req.body.stream, 'i');
+      const students = await StudentModel.find({ stream: streamPattern });
   
+      res.json(students);
+      console.log(students);
+    } catch (err) {
+      console.error('Error fetching students:', err);
+      res.status(500).json("Server error");
+    }
+  });
+  
+  app.get('/faulting', (req, res) => {
+    FaultingModel.find({})
+    .then(faultings => res.json(faultings))
+    .catch(err => {
+      console.error('Error fetching faultings:', err);
+      res.status(500).json("Server error");
+    });
+  })
 
 app.post('/fault', (req, res) => {
   FaultModel.create(req.body)
@@ -100,6 +121,7 @@ app.post('/request', (req, res) => {
     res.status(500).json("Server error");
   });
 })
+
 
 app.post('/permission', (req, res) => {
   PermissionModel.create(req.body)

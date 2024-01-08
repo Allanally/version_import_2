@@ -19,7 +19,7 @@ const First = () => {
     return ( 
         <div>
          <Navbar />
-         <div className="sm:w-[50%] w-11/12 border border-blue-400 mt-60 min-h-[40vh] rounded-md m-auto">
+         <div className="sm:w-[50%] w-11/12 border border-blue-400 mt-60 min-h-[50vh] rounded-md m-auto">
          <h1 className="m-auto text-2xl text-center mt-6">CHOOSE OPTION</h1>
          <div className="flex flex-col mt-14 items-center w-11/12">
           {

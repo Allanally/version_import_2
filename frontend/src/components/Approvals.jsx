@@ -4,7 +4,7 @@ import { FaTrash } from 'react-icons/fa';
 import axios from 'axios';
 import swal from 'sweetalert';
 import jsPDF from "jspdf";
-import logo from './logo.0cfaa4df.png'
+import logo from './csa.jpg'
 
 const Approvals = () => {
     const [returningDate, setReturningDate] = useState(false);

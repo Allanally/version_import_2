@@ -6,8 +6,8 @@ const FaultSchema = new mongoose.Schema({
     type: String,
     issuer: String,
     message: String,
-    user: String,
-    stream: String
+    stream: String,
+    mark: String
 })
 FaultSchema.statics.query = async function(name, stream){
     const fault = await this.find({ name, stream }) 
